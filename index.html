@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation bar demo</title>
+        <style>
+            .navigationBar .ul1 {
+                list-style-type: none;
+                background-color: lightslategray;
+                padding: 0;}
+            .navigationBar .ul1 .menu-item {
+                display: inline-block;
+                margin: 0;}
+           
+            .navigationBar .ul1 .menu-item:hover:not(.select) {
+                background-color: olive;
+            }
+            .navigationBar .ul1 .select {
+                background-color: mediumorchid;}
+
+           
+            .navigationBar .menu-item a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 20px;
+                border-right: 1px solid #999;
+                margin: 0;
+            }
+            .navigationBar .menu-item .sub-menu .sub-munu-item {
+                list-style-type: none;
+            }
+            .navigationBar .menu-item .sub-menu {
+                position: absolute;
+                display: none;
+                background-color: olive;
+                padding: 5px;
+            }
+            .navigationBar .menu-item .sub-menu .sub-munu-item {
+                padding: 5px;
+            }
+            .navigationBar {
+                position: relative;
+            }
+            .navigationBar .ul1 .menu-item:first-child:hover .sub-menu {
+                display: block;
+            }
+            .ul2 {
+                position: absolute;
+            }
+        </style> 
+    </head>
+    <body>
+        <nav class="navigationBar">
+            <ul class="ul1">
+
+                <li class="menu-item select">
+                    <a href="https://www.greatandhra.com/">Home</a>
+                    <ul class="sub-menu" >
+                        <li class="sub-munu-item">Sub munu item 1</li>
+                        <li class="sub-munu-item">Sub munu item 2</li>
+                        <li class="sub-munu-item">Sub munu item 3</li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="https://www.google.com/">Galary</a></li>
+                <li class="menu-item"><a href="https://www.google.com/">Contact us</a></li>
+                <li class="menu-item">
+                    <a href="https://www.google.com/">About</a>
+
+                </li>
+            </ul>
+        </nav>
+        <ul class="ul2">
+
+            <li class="menu-item select"><a href="https://www.greatandhra.com/">Home</a></li>
+            <li class="menu-item"><a href="https://www.google.com/">Galary</a></li>
+            <li class="menu-item"><a href="https://www.google.com/">Contact us</a></li>
+           
+        </ul>
+       
+        
+    </body>
+</html>
